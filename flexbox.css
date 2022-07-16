@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 80vw;
+    height: 500px;
+    margin: 10px auto;
+    background-color: beige;
+    /* Kích hoạt flexbox */
+    display: flex;
+    /* Điều chỉnh hướng của các phần tử con theo chiều dọc */
+    flex-direction: column;
+    /* Điều chỉnh các phần tử con theo chiều ngang */
+    flex-direction: row;
+    /* Điều chỉnh các phần tử con về cạnh bên phải */
+    justify-content: end;
+    /* Điều chỉnh các phần tử con về cạnh trái */
+    justify-content: start;
+    /* Căn giữa */
+    justify-content: center;
+    /* Cách đều các phần tử theo chiều ngang (Không cách trái phải) */
+    justify-content: space-between;
+    /* Cách đều các phần tử theo chiều ngang */
+    justify-content: space-evenly;
+    /* Cho mỗi item khoảng cách trái phải bằng nhau */
+    justify-content: space-around;
+    /* Đưa các phần tử về bottom */
+    align-items:end;
+    /* Đưa các phần tử về start */
+    align-items: start;
+    /* Đưa các phần tử về giữa */
+    align-items: center;
+    /* Phủ đầy chiều cao của container */
+    align-items: stretch;
+    /* Xuồng dòng các item */
+    flex-wrap: wrap;
+}
+.item{
+    width: 100px;
+    height: 150px;
+}
+.box1{
+    background-color: red;
+    order: 3;
+}
+.box2{
+    background-color: green;
+    order:1;
+}
+.box3{
+    background-color: blue;
+}
+.box4{
+    background-color: yellow;
+    order: 2;
+}
+.box5{
+    background-color: orange;
+    order: 5;
+}
